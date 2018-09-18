@@ -1,8 +1,13 @@
 // VARIABLES
-$type-base: Helvetica, Arial, sans-serif;
+$type-base: "Source Sans Pro", Helvetica, Arial, sans-serif;
 $type-heading: Georgia, serif; 
 $type-linewidth: 38em;
+$type-color: #333;
+$type-color-lightgrey: rgba(0,0,0,.5);
 
+//COLOR
+$accent-color: #093550;
+  
 
 @import "partials/toc";
 @import "partials/typography";

@@ -9,10 +9,11 @@ CSS TABLE OF CONTENTS
 ------------------------- */
 /* TYPOGRAPHY */
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 100%;
   /* 16px */
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  color: #333; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Georgia, serif;
@@ -54,3 +55,28 @@ h6 {
 p {
   margin: 0 0 .5em 0;
   max-width: 38em; }
+
+/* Horizontal Rule */
+hr {
+  border: 0;
+  height: 1px;
+  margin: 3em 0;
+  background: #ddd; }
+
+/* HELPERS */
+.headline {
+  font-size: 4em;
+  color: #093550;
+  margin: 0; }
+
+.subheadline {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0.25em 0 0.5em 0; }
+
+.meta {
+  font-size: .875em;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 1.5em; }

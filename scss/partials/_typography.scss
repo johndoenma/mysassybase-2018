@@ -4,6 +4,7 @@ body {
     font-family: $type-base;
     font-size: 100%; /* 16px */
     line-height: 1.5em;
+    color: $type-color; 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,4 +26,34 @@ h6 { font-size: 1em; line-height: 1.5em;} /* 16 / 16 = 1em */
 p {
     margin: 0 0 .5em 0;
     max-width: $type-linewidth;
+}
+
+/* Horizontal Rule */
+hr {
+    border: 0;
+    height: 1px;
+    margin: 3em 0;
+    background: #ddd;
+}
+
+/* HELPERS */
+
+.headline {
+    font-size: 4em;
+    color: $accent-color;
+    margin: 0;
+}
+
+.subheadline {
+    font-family: $type-base;
+    font-size: 2.5em;
+    font-weight: normal;
+    color: $type-color-lightgrey;
+    margin: 0.25em 0 0.5em 0;
+}
+
+.meta {
+    font-size: .875em;
+    color: $type-color-lightgrey;
+    margin-bottom: 1.5em;
 }
