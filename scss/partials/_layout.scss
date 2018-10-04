@@ -63,7 +63,6 @@ $grid-column-gap: 2%;
     @media (max-width: $breakpoint-small - 1) {
         flex-grow: 0;
         flex-basis: $breakpoint-small;
-        border: 1px solid red;
     }
 }
 

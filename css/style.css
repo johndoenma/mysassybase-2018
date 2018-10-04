@@ -181,8 +181,7 @@ body {
       flex-grow: 0;
       -webkit-flex-basis: 768px;
       -ms-flex-preferred-size: 768px;
-      flex-basis: 768px;
-      border: 1px solid red; } }
+      flex-basis: 768px; } }
 
 .demo .column {
   padding: 1em;
