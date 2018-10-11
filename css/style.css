@@ -20,9 +20,14 @@ body {
   line-height: 1.5em;
   color: #333; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Georgia, serif;
-  margin: 0 0 .5em 0;
+  margin: 0 0 0.5em 0;
   max-width: 38em; }
 
 /* Traditional typographic scale
@@ -58,7 +63,7 @@ h6 {
 
 /* 16 / 16 = 1em */
 p {
-  margin: 0 0 .5em 0;
+  margin: 0 0 0.5em 0;
   max-width: 38em; }
 
 /* Horizontal Rule */
@@ -82,9 +87,15 @@ hr {
   margin: 0.25em 0 0.5em 0; }
 
 .meta {
-  font-size: .875em;
+  font-size: 0.875em;
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 1.5em; }
+
+.textcentered {
+  text-align: center; }
+  .textcentered * {
+    margin-left: auto;
+    margin-right: auto; }
 
 /* COMPONENTS */
 /* #BUTTONS */
@@ -114,6 +125,12 @@ a.button {
     background-color: #069;
     color: #fff;
     border-color: #069; }
+
+/* MEDIA */
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto; }
 
 /* LAYOUT */
 * {
@@ -166,6 +183,12 @@ body {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  .row.swapped {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
 
 .row > .column {
   -webkit-box-flex: 1;
@@ -182,6 +205,8 @@ body {
       -webkit-flex-basis: 768px;
       -ms-flex-preferred-size: 768px;
       flex-basis: 768px; } }
+  .row > .column.one-half {
+    width: 48%; }
 
 .demo .column {
   padding: 1em;
@@ -216,7 +241,7 @@ body {
     @media (max-width: 767px) {
       .site-header .site-navigation a,
       .site-footer .site-navigation a {
-        padding: .5em 1em; } }
+        padding: 0.5em 1em; } }
 
 .site-header {
   display: -webkit-box;
@@ -235,7 +260,7 @@ body {
     font-size: 1.5em;
     margin: 0; }
     .site-header .site-identity h1 a {
-      padding: 1em .75em;
+      padding: 1em 0.75em;
       display: block; }
 
 .site-footer ul {
@@ -246,3 +271,22 @@ body {
 
 section {
   padding: 3em 0; }
+
+/* HERO */
+.hero {
+  background-color: #faeff5;
+  padding: 5em 0; }
+
+.sectionhead {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+  margin: 2em auto 1em auto; }
+
+.sectionhead:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #093550;
+  width: 10%;
+  margin: 1em auto 4em auto; }

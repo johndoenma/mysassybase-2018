@@ -1,47 +1,45 @@
 /* LAYOUT */
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 // SMALL SCREENS AND UP (MOBILE-FIRST)
 body {
-    font-size: 87.5%; /* 14px */
-    margin: 0;
-    padding: 0;
+  font-size: 87.5%; /* 14px */
+  margin: 0;
+  padding: 0;
 }
-.container { 
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 4%;
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 4%;
 }
 
 // MEDIUM SCREENS (TABLET)
 @media (min-width: $breakpoint-small) {
-    
-    body {
-        font-size: 100%; /* 16px */
-    }
-
+  body {
+    font-size: 100%; /* 16px */
+  }
 }
 
 // LARGE SCREENS (NOTEBOOKS)
 @media (min-width: $breakpoint-medium) {
-    .container { 
-        max-width: $breakpoint-medium - 50;
-        padding: 0 50px;
-     }
+  .container {
+    max-width: $breakpoint-medium - 50;
+    padding: 0 50px;
+  }
 }
 
 // EXTRA LARGE SCREENS (DESKTOP++)
 @media (min-width: $breakpoint-large) {
+  body {
+    font-size: 112.5%; /* 18px */
+  }
 
-    body {
-        font-size: 112.5%; /* 18px */
-    }
-
-    .container {
-        max-width: $breakpoint-large - 50;
-    }
-
+  .container {
+    max-width: $breakpoint-large - 50;
+  }
 }
 
 /* Grid */
@@ -49,26 +47,33 @@ body {
 $grid-column-gap: 2%;
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -$grid-column-gap/2;
-    margin-right: -$grid-column-gap/2;
-    align-content: center;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$grid-column-gap/2;
+  margin-right: -$grid-column-gap/2;
+  align-content: center;
+  justify-content: center;
+  &.swapped {
+    flex-direction: row-reverse;
+  }
 }
 
 .row > .column {
-    flex-grow: 1;
-    margin: 0 $grid-column-gap/2 $grid-column-gap $grid-column-gap/2;
-    @media (max-width: $breakpoint-small - 1) {
-        flex-grow: 0;
-        flex-basis: $breakpoint-small;
-    }
+  flex-grow: 1;
+  margin: 0 $grid-column-gap/2 $grid-column-gap $grid-column-gap/2;
+
+  @media (max-width: $breakpoint-small - 1) {
+    flex-grow: 0;
+    flex-basis: $breakpoint-small;
+  }
+  &.one-half {
+    width: 50 - $grid-column-gap;
+  }
 }
 
 // FOR DEMO PURPOSES
 .demo .column {
-    padding: 1em;
-    background: #ccc;
-    text-align: center;
+  padding: 1em;
+  background: #ccc;
+  text-align: center;
 }

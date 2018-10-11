@@ -1,60 +1,89 @@
 /* SITE STRUCTURE */
 .site-header,
 .site-footer {
-    background: #c6538c;
-    
+  background: #c6538c;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .site-navigation {
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      @media (max-width: $breakpoint-small - 1) {
+        display: block;
+      }
+    }
+
     a {
-        color: #fff;
-        text-decoration: none;
+      display: block;
+      padding: 1.6em 1em 1.4em 1em;
+
+      @media (max-width: $breakpoint-small - 1) {
+        padding: 0.5em 1em;
+      }
     }
-
-    .site-navigation {
-        ul {
-            display: flex; 
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            @media (max-width: $breakpoint-small - 1) { 
-                display: block; 
-            }
-        }
-
-        a {
-            display: block;
-            padding: 1.6em 1em 1.4em 1em;
-
-            @media (max-width: $breakpoint-small - 1) { 
-                padding: .5em 1em;
-            }
-        }
-    }
+  }
 }
 .site-header {
-    display: flex;
-    justify-content: space-between;
-    @media (max-width: $breakpoint-small - 1) { 
-        display: block;
-        padding: 1em 0;
-    }
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: $breakpoint-small - 1) {
+    display: block;
+    padding: 1em 0;
+  }
 
-    .site-identity {
-        h1 {
-            font-size: 1.5em;
-            margin: 0;
-            a {
-                padding: 1em .75em;
-                display: block;
-            }
-        }
+  .site-identity {
+    h1 {
+      font-size: 1.5em;
+      margin: 0;
+      a {
+        padding: 1em 0.75em;
+        display: block;
+      }
     }
+  }
 }
 
 .site-footer {
-    ul {
-        justify-content: center;
-    } 
+  ul {
+    justify-content: center;
+  }
 }
 
 section {
-    padding: 3em 0;
+  padding: 3em 0;
+}
+
+/* HERO */
+
+.hero {
+  background-color: $hero-bg-color;
+  padding: 5em 0;
+  //text-align: center;
+  //p {
+  //max-width: none;
+  //margin-left: auto;
+  //margin-right: auto;
+  //}
+}
+
+.sectionhead {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+  margin: 2em auto 1em auto;
+}
+
+.sectionhead:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid $accent-color;
+  width: 10%;
+  margin: 1em auto 4em auto;
 }
