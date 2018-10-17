@@ -92,6 +92,10 @@ body {
       }
     }
   }
+  //Vertically Center Column Content
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 // FOR DEMO PURPOSES
