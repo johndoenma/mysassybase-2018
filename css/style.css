@@ -168,54 +168,34 @@ body {
 /* Grid */
 .row {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 1%;
   margin-right: 1%;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
   .row.swapped {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-    -webkit-flex-direction: row-reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse; }
 
 .row > .column {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  margin: 0 1% 2% 1%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  margin: 0 1% 2% 1%; }
   @media (max-width: 767px) {
     .row > .column {
       -webkit-box-flex: 0;
-      -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
       flex-grow: 0;
-      -webkit-flex-basis: 768px;
       -ms-flex-preferred-size: 768px;
       flex-basis: 768px; } }
   .row > .column.one-half {
@@ -227,7 +207,6 @@ body {
   @media (min-width: 768px) {
     .row > .column.centered {
       -webkit-box-flex: 0;
-      -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
       flex-grow: 0; }
       .row > .column.centered.one-half, .row > .column.centered.one-third, .row > .column.centered.one-fourth {
@@ -250,7 +229,6 @@ body {
   .site-header .site-navigation ul,
   .site-footer .site-navigation ul {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     list-style: none;
@@ -271,11 +249,9 @@ body {
 
 .site-header {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
   @media (max-width: 767px) {
@@ -291,7 +267,6 @@ body {
 
 .site-footer ul {
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
 
